@@ -56,7 +56,7 @@ html, body {
         drop-shadow(0 0 30px rgba(255,220,180,0.12));
 }
 
-/* 🔘 BUTTONS (ULTRA TRANSPARENT) */
+/* 🔘 BUTTONS */
 .actions {
     position: fixed;
     bottom: 45px;
@@ -85,13 +85,6 @@ html, body {
     -webkit-backdrop-filter: blur(2px);
 
     cursor: pointer;
-
-    transition: all 0.2s ease;
-}
-
-.btn:hover {
-    background: rgba(255, 255, 255, 0.05);
-    transform: translateY(-1px);
 }
 
 /* 📍 FOOTER */
@@ -138,10 +131,6 @@ html, body {
 
     color: white;
     text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-
-    cursor: pointer;
 }
 
 /* 📇 CONTACT */
@@ -161,9 +150,6 @@ html, body {
 
     font-size: 16px;
     color: white;
-
-    user-select: all;
-    cursor: pointer;
 }
 
 /* ✨ ANIMATION */
@@ -175,8 +161,9 @@ html, body {
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
+    /* 🔥 LOGO 2X PLUS GROS SUR TEL */
     .logo {
-        width: 140vw !important;
+        width: 200vw !important;
         max-width: none !important;
     }
 
@@ -210,12 +197,6 @@ html, body {
         flex-wrap: wrap;
         bottom: 55px;
     }
-
-    .btn {
-        width: auto;
-        font-size: 12px;
-        padding: 10px 12px;
-    }
 }
 </style>
 </head>
@@ -244,9 +225,7 @@ html, body {
         Instagram
     </a>
 
-    <div class="btn" onclick="openContact()">
-        Contact
-    </div>
+    <div class="btn" onclick="openContact()">Contact</div>
 
 </div>
 
@@ -266,20 +245,12 @@ html, body {
 <!-- CONTACT -->
 <div class="overlay" id="contactOverlay" onclick="closeOverlay(event)">
     <div class="contact-box">
-
-        <a class="contact-item" href="mailto:contact@bengcafe.fr">
-            contact@bengcafe.fr
-        </a>
-
-        <a class="contact-item" href="tel:0256041281">
-            02 56 04 12 81
-        </a>
-
+        <a class="contact-item" href="mailto:contact@bengcafe.fr">contact@bengcafe.fr</a>
+        <a class="contact-item" href="tel:0256041281">02 56 04 12 81</a>
     </div>
 </div>
 
 <script>
-
 function openMenu() {
     document.getElementById("menuOverlay").style.display = "flex";
 }
@@ -298,7 +269,6 @@ function openPDF(file) {
     window.open(file, "_blank");
     document.getElementById("menuOverlay").style.display = "none";
 }
-
 </script>
 
 </body>
