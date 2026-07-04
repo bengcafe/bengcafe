@@ -74,14 +74,14 @@ html, body {
     padding: 10px 14px;
     border-radius: 999px;
 
-    background: rgba(255, 255, 255, 0.01); /* 🔥 encore plus transparent */
+    background: rgba(255, 255, 255, 0.01);
     border: 1px solid rgba(255, 255, 255, 0.08);
 
     color: rgba(255,255,255,0.92);
     text-decoration: none;
     font-size: 13px;
 
-    backdrop-filter: blur(2px); /* 🔥 quasi invisible */
+    backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
 
     cursor: pointer;
@@ -175,12 +175,14 @@ html, body {
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
-    .center {
-        transform: translateY(-85px);
+    /* 🔥 LOGO PLUS GROS UNIQUEMENT MOBILE */
+    .logo {
+        width: 120vw;
+        max-width: none;
     }
 
-    .logo {
-        width: min(1500px, 92vw);
+    .center {
+        transform: translateY(-85px);
     }
 
     .actions {
