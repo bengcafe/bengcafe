@@ -249,7 +249,7 @@ html, body {
 
 <div class="footer">
     24 rue du Frout · Quimper<br>
-    Jeu 11h–18h · Ven–Lun 9h45–18h
+    Mar 11h–18h · Mer–Sam 10h–18h
 </div>
 
 <!-- MENU -->
